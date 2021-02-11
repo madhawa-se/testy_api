@@ -6,6 +6,29 @@ This is a simple api written in typescript and node.
 Sqlite is used for database.
 Typescript version of sequlizer is used as a ORM.
 
+### POSTMAN collection
+
+https://documenter.getpostman.com/view/5740346/TW77hifu
+
+
+------------------------------------------------------------
+
+### To install
+
+## Prerequisites
+SQlite modules may require visuall c++ and python.make sure you have installed them.
+
+* Clone the git repository, and `npm i` to install dependencies
+* Run API using  `npm run dev` command
+
+
+
+### Database Structure
+
+![logo](https://raw.githubusercontent.com/madhawa-se/testy_api/main/src/assets/db-structure.png)
+
+
+
 ## Ingredients
 
 ### Get All Ingredient
@@ -37,7 +60,7 @@ http://localhost:3000/ingredient/
 
 ### Get a Ingredient
 
-http://localhost:3000/ingredient/{ingredient id}
+http://localhost:3000/ingredient/{ingredientId}
 
 **Response:**
 
@@ -90,7 +113,7 @@ http://localhost:3000/ingredient/{ingredientId}
 
 ## Recipes
 
-### Get All Receips
+### Get All Recipes
 
 http://localhost:3000/recipe
 
@@ -196,5 +219,3 @@ http://localhost:3000/recipe/{recipeId}
 
 Optimize queries with sequalizer associations
 Add route validation for all api calls
-
-
