@@ -12,6 +12,9 @@ Typescript version of sequlizer is used as a ORM.
 
 http://localhost:3000/ingredient/
 
+* **Method:**
+  `GET`
+
 **Response:**
 
 ```
