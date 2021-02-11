@@ -85,7 +85,7 @@ http://localhost:3000/ingredient/{ingredientId}
 
 ------------------------------------------------------------
 
-## Ingredients
+## Recipes
 
 ### Get All Receips
 
