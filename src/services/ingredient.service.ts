@@ -1,8 +1,4 @@
-import { Request, Response } from 'express';
 import Ingredient from '../db-models/ingredient.model';
-import RecipeWithIngredients from '../db-models/recipe_with_ingredients..model';
-import { CreateRecipeDto } from '../dto/createRecipe.dto';
-import { EditRecipeDto } from '../dto/editRecipe.dto';
 
 export class _IngredientService {
 

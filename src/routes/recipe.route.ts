@@ -1,9 +1,4 @@
-import { ingredientRouter } from './ingredient.route';
 import express, { NextFunction, Request, Response } from 'express';
-import Recipe from '../db-models/recipes.model';
-import RecipeWithIngredients from '../db-models/recipe_with_ingredients..model';
-import Ingredient from '../db-models/ingredient.model';
-import { CreateRecipeDto } from '../dto/createRecipe.dto';
 import { RecipeService } from '../services/recipe.service';
 const { body, validationResult } = require('express-validator');
 

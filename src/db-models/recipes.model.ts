@@ -1,4 +1,3 @@
-import { IRecipe } from './../entity/interfaces/i_recipe';
 import { Model, Table, AutoIncrement, PrimaryKey, Column, AllowNull, NotEmpty, BelongsToMany,HasMany, Scopes } from "sequelize-typescript";
 import Ingredient from './ingredient.model';
 import RecipeWithIngredients from './recipe_with_ingredients..model';
