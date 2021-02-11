@@ -64,6 +64,9 @@ http://localhost:3000/ingredient/
 
 http://localhost:3000/ingredient/{ingredientId}
 
+* **Method:**
+  `GET`
+
 **Response:**
 
 ```
@@ -78,6 +81,9 @@ http://localhost:3000/ingredient/{ingredientId}
 
 http://localhost:3000/ingredient/
 
+* **Method:**
+  `POST`
+
 **Request:**
 
 ```json
@@ -86,17 +92,14 @@ http://localhost:3000/ingredient/
 }
 ```
 
-### Edit Ingredient
-
-**Request:**
-
-http://localhost:3000/ingredient/{ingredientId}
-
 ### Update Ingredient
 
 **Request:**
 
 http://localhost:3000/ingredient/{ingredientId}
+
+* **Method:**
+  `PUT`
 
 ```json
 {
@@ -111,6 +114,9 @@ http://localhost:3000/ingredient/{ingredientId}
 http://localhost:3000/ingredient/{ingredientId}
 
 
+* **Method:**
+  `DELETE`
+
 ------------------------------------------------------------
 
 ## Recipes
@@ -118,6 +124,9 @@ http://localhost:3000/ingredient/{ingredientId}
 ### Get All Recipes
 
 http://localhost:3000/recipe
+
+* **Method:**
+  `GET`
 
 **Response:**
 
@@ -155,6 +164,9 @@ http://localhost:3000/recipe
 
 http://localhost:3000/recipe/{recipeId}
 
+* **Method:**
+  `GET`
+
 **Response:**
 
 ```
@@ -179,6 +191,10 @@ http://localhost:3000/recipe/{recipeId}
 
 http://localhost:3000/recipe/
 
+* **Method:**
+  `POST`
+
+
 **Request:**
 
 ```json
@@ -193,6 +209,9 @@ http://localhost:3000/recipe/
 **Request:**
 
 http://localhost:3000/recipe/{recipeId}
+
+* **Method:**
+  `PUT`
 
 ```json
 {
@@ -215,6 +234,9 @@ http://localhost:3000/recipe/{recipeId}
 **Request:**
 
 http://localhost:3000/recipe/{recipeId}
+
+* **Method:**
+  `DELETE`
 
 
 ### To do
