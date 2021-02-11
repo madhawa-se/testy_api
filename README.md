@@ -1,6 +1,6 @@
 # Tasty Recipes API
 
-![logo](https://raw.githubusercontent.com/madhawa-se/recipe/main/src/assets/logo.png)
+![logo](https://raw.githubusercontent.com/madhawa-se/testy_api/main/src/assets/logo.png)
 
 This is a simple api written in typescript and node.
 Sqlite is used for database.
