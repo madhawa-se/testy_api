@@ -15,7 +15,7 @@ https://documenter.getpostman.com/view/5740346/TW77hifu
 
 ### To install
 
-## Prerequisites
+#### Prerequisites
 SQlite modules may require visuall c++ and python.make sure you have installed them.
 
 * Clone the git repository, and `npm i` to install dependencies
@@ -29,7 +29,9 @@ SQlite modules may require visuall c++ and python.make sure you have installed t
 
 
 
-## Ingredients
+## API documentation
+
+### Ingredients
 
 ### Get All Ingredient
 
