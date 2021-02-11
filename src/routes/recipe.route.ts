@@ -60,19 +60,19 @@ recipeRouter.put('/:id', async (req: Request, res: Response, next) => {
         await RecipeService.update(receipId, req.body);
         res.json({ status: 'success' });
     } catch (e) {
-        next(e);
+        return res.status(400).json({ error: e.toString() });
     }
 });
 
 
-recipeRouter.delete('/:id', async (req: Request, res: Response,next) => {
+recipeRouter.delete('/:id', async (req: Request, res: Response, next) => {
     const ingredientID = req.params['id'];
     try {
         const receipId = Number(req.params['id']);
         await RecipeService.delete(receipId);
         res.json({ status: 'success' });
     } catch (e) {
-        next(e);
+        return res.status(400).json({ error: e.toString() });
     }
 });
 

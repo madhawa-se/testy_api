@@ -191,3 +191,10 @@ http://localhost:3000/recipe/{recipeId}
 
 http://localhost:3000/recipe/{recipeId}
 
+
+### To do
+
+Optimize queries with sequalizer associations
+Add route validation for all api calls
+
+
