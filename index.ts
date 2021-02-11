@@ -1,16 +1,15 @@
 import { recipeRouter } from './src/routes/recipe.route';
 import { ingredientRouter } from './src/routes/ingredient.route';
-const expressValidator = require('express-validator');
 import express from "express";
 import {Sequelize} from 'sequelize-typescript';
-const { Ingredient } = require("./src/db-models/ingredient.model");
-var bodyParser = require('body-parser');
+import * as bodyParser from "body-parser";
 
 const app = express();
 app.use(bodyParser.json());
+
+// add routing
 app.use('/ingredient', ingredientRouter);
 app.use('/recipe', recipeRouter);
-app.use(expressValidator());
 
 const port = process.env.PORT || 3000;
 
@@ -38,5 +37,22 @@ async function auth() {
 
 }
 
+welcome();
+app.listen(port, () => console.log(`API listening on PORT ${port}`));
 
-app.listen(port, () => console.log(`App listening on PORT ${port}`));
+
+function welcome(){
+  console.log(`
+             
+  
+████████╗░█████╗░░██████╗████████╗██╗░░░██╗  ██████╗░███████╗░█████╗░██╗██████╗░███████╗
+╚══██╔══╝██╔══██╗██╔════╝╚══██╔══╝╚██╗░██╔╝  ██╔══██╗██╔════╝██╔══██╗██║██╔══██╗██╔════╝
+░░░██║░░░███████║╚█████╗░░░░██║░░░░╚████╔╝░  ██████╔╝█████╗░░██║░░╚═╝██║██████╔╝█████╗░░
+░░░██║░░░██╔══██║░╚═══██╗░░░██║░░░░░╚██╔╝░░  ██╔══██╗██╔══╝░░██║░░██╗██║██╔═══╝░██╔══╝░░
+░░░██║░░░██║░░██║██████╔╝░░░██║░░░░░░██║░░░  ██║░░██║███████╗╚█████╔╝██║██║░░░░░███████╗
+░░░╚═╝░░░╚═╝░░╚═╝╚═════╝░░░░╚═╝░░░░░░╚═╝░░░  ╚═╝░░╚═╝╚══════╝░╚════╝░╚═╝╚═╝░░░░░╚══════╝
+
+  Testy Recipes API v - 1.5                                              
+
+  `);
+}

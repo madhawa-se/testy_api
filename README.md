@@ -185,7 +185,7 @@ http://localhost:3000/recipe/{recipeId}
 }
 ```
 
-### Delete Ingredient
+### Delete a recipe
 
 **Request:**
 
